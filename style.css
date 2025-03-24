@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #414141;
+    color: rgb(255, 255, 255);
+}
+
+#bodyhead{
+    z-index: 100;
+}
+
+#topname {
+    margin-left: 10vh;
+    font-family:cursive;
+    margin-top: -1vh;
+}
+
+.attributes{
+    margin-left: 20%;
+    margin-top: 2vh;
+}
+
+.attributes a {
+    margin-inline: 3vh;
+    text-decoration: none;
+    color: aqua;
+    font-size: larger;
+    
+    border-radius: 2rem;
+    padding: 1vh;
+}
+
+.attributes :hover{
+    background-color: aqua;
+    color: #ff0000;
+    font-family: cursive;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    height: 12vh;
+    width: 100%;
+    position: relative;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+}
+
+.empty{
+    height: 5vh;
+    position: fixed;
+}
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.headof2 {
+    display: flex;
+}
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#about{
+    margin-top: -1rem;
+}
+
+.edu{
+    display: flex;
+}
+
+#education{
+    text-align: center;
+    padding: 60px 20px;
+}
+.academic{
+    margin-inline: 4rem;
+    border: 2px solid white;
+    border-radius: 2vh;
+    padding: 1vh;
+    width: 28rem;
+}
+
+.academic p{
+    color: white;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo1{
+    margin-left: 18%;
+    margin-top: 2.5rem;
+}
+
+.photo1 img {
+    width: 22rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+    box-shadow: 0 0 25px #0096ff;
+    transition: 0.4s ease-in-out;   
+}
+
+#firstheading{
+    margin-left: 12vh;
+    margin-top: 2vh;
+    font-size:4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1.5px black;
+}
+
+.content1 p {
+    font-size: 2.5rem;
+}
+
+.wraper{
+    display: inline-flex;
+}
+
+.fixed{
+    font-size: 2rem;
+}
+.moving{
+    margin-left: 2rem;
+    height: 5rem;
+    line-height: 5.5rem;
+    overflow: hidden;
+}
+.moving li{
+    color: #fbfafa;
+    list-style: none;
+    font-size: 2.5rem;
+    position: relative;
+    top: 0;
+    animation: move 6s steps(4) infinite;
+}
+.pick{
+    margin-top: -10px;
+}
+
+@keyframes move{
+    100% {
+        top: -360px;
+    }
+}
+
+.moving li span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: type 2s steps(10) infinite;
+}
+
+@keyframes type{
+    100%{
+        left: 100%;
+        margin: 0 -350px 0 35px;
+    }
+    
+}
+
+.bio p {
+    font-size: 1.3rem;
+    color: #fbfafa;
+    text-shadow: #333;
+}
+
+#mp{
+    font-size: 2.8rem;
+    background-color: rgb(218, 165, 246);
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+
+#abm{
+    font-size: 2.8rem;
+    background-color: rgb(218, 165, 246);
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+
+#ibm2{
+    width: 60rem;
+    font-size: 2.8rem;
+    margin-left: 12rem;
+    background-color: rgb(218, 165, 246);
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conts{
+    margin-top: 5%;
+    border: 4px solid red;
+    padding: 1rem;
+    border-radius: 10vh;
+
+}
+
+.conts img{
+    margin-inline: 2rem;
+    border-radius: 1rem;
+}
+
+
+.cv a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ddd;
+    -webkit-text-stroke: 2px #333;
+    font-family: cursive;
+}
+
+.twobtns{
+    display: flex;
+}
+.cv{
+    background-color: cadetblue;
+    width: 15rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    height: 4rem;
+    margin-right: -50px;
+    margin-left: 10%;
+}
+
+.cv :hover{
+    transform: scale(0.8);
+}
+
+
+.conts img:hover{
+    transform: scale(1.2);
+}
+.project-item {
+    background: #fff;
+    margin: 10px;
+    margin-inline: 1.5rem;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0004ff;
+}
+
+#contact h2{
+    font-size: 2.8rem;
+}
+#contact label{
+    font-size: 2rem;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

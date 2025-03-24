@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_on" />
+</head>
+<body>
+    <header id="bodyhead">
+        <nav>
+            <h1 id="topname"><i>Portfolio</i></h1>
+                <div class="attributes">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="toggle"><img src="./Photos/toggle.png" height="30rem" alt=""></button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="empty"></div>
+        <div class="headof2">
+        <div class="content1">
+            <h1 id="firstheading">Hello, I am Gagan.</h1> 
+            
+            <div class="wraper">
+                <div class="fix"><p>I'm a</p></div>
+                <ul class="moving"><div class="pick">
+                    <li><span>Frontend Developer...</span></li>
+                    <li><span>React Developer....</span></li>
+                    <li><span>Youtuber...</span></li>
+                    <li><span>Freelancer...</span></li></div>
+                </ul>
+            </div>
+            <div class="conts">
+                <a href="https://www.linkedin.com/in/gagandeep-singh-0119a2264/" target="_blank"><img src="./Photos/in.png"  height="50rem" alt="Linked in"></a>
+                <a href="https://wa.me/9056280281" target="_blank"><img src="./Photos/WA.png" height="50rem" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/@gaganmehrok8695" target="_blank"><img src="./Photos/YT.png" id="ytlogo" height="60rem" alt="Youtube"></a>
+                <a href="https://www.instagram.com/gagan_mehrok_/" target="_blank"><img src="./Photos/insta.jpg" height="50rem" alt=""></a>
+                <div class="twobtns"><div class="cv"><a href="./in.png" download=""><h2>Download CV</h2></a></div>
+                <div class="cv"><a href="mailto:gaganmehrok230@gmail.com"><h2>Hire Me</h2></a></div></div>
+            </div>
+        </div>  
+        <div class="photo1">
+            <img src="./Photos/Photo.jpg" alt="Gagan">
+        </div>
+    </div>
+    </section>
+<hr>
+    <section id="about">
+        <div class="content">
+            <h2 id="abm">About Me</h2>
+            <div class="about-container">
+                <div class="bio">
+                    <p>
+                        Hi, I'm Gagandeep Singh, a passionate web developer with a love for creating clean and functional websites. 
+                        I specialize in front-end development using HTML, CSS, JavaScript & React.JS including latest frameworks like bootstrap & Tailwind CSS. I always love to learn new technologies 
+                        and applying them to real-world projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="education">
+        <h1 id="ibm2">Academic Qualification</h1>
+        <div class="edu">
+        <div class="academic">
+            <h2><i>Matriculation</i></h2><p>Govt. Model Sr. Sec. School. - 2015 (54%)</p>
+        </div>
+        <div class="academic">
+            <h2><i>Intermediate</i></h2> <p>Victoria Public School Patran. - 2017 (73%)</p>
+        </div>
+        <div class="academic">
+            <h2><i>B. A. (English)</i></h2> <p>Khalsa College Patiala. - 2022 (70%)</p>
+        </div>
+        <div class="academic">
+            <h2><i>MERN Stack</i></h2><p>Future Finders Mohali. with internship - 2025</p>
+        </div>
+    </div>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <div class="content">
+            <h2 id="mp">My Projects</h2>
+            <div class="project-list">
+                <div class="project-item" style=" text-shadow: 2px 2px 2px white; background-image: url('./Photos/flip.png'); background-size: contain;">
+                    <h3 style="color: black;"><i>Flipkart Clone</i></h3>
+                    <p style="color: #414141;">Made a clone of Flipkart web using HTML & CSS.</p>
+                    <a href="https://gaganmehrok-fc.netlify.app/" target="_blank">Click here</a>
+                </div>
+                <div class="project-item" style=" text-shadow: 1px 1px 2px red; background-image: url(./Photos/clock.jpeg); background-size:cover;">
+                    <h3><i>Time Clock</i></h3>
+                    <p>Clock with background theme change function.</p>
+                    <a href="gagan-clock.netlify.app" target="_blank" style="color: white;">Click here</a>
+                </div>
+                <div class="project-item" style="background-color: #414777;">
+                    <h3><i>My Portfolio</i></h3>
+                    <p>Also made this portfolio using HTML, CSS & JS with React.JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <div class="content">
+            <h2 id="mp">Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my Portfolio.</p>
+    </footer>
+
+    <script src="./pf.js"></script>
+</body>
+</html>
